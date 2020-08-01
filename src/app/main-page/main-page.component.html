@@ -1,0 +1,20 @@
+<div class="div-border">
+    <p>User is on page 1</p>
+</div><br>
+<button [routerLink]="['/last-page']" class="button-css">Go To Page 2</button>
+<table style="width:70%">
+    <tr>
+      <th>S.No</th>
+      <th>Name</th>
+      <th>Foodie Level</th>
+      <th>Rating</th>
+    </tr>
+    <tbody *ngFor='let item of userData; let i=index'>
+    <tr>
+      <td>{{i+1}}</td>
+      <td>{{item.review.user.name}}</td>
+      <td>{{item.review.user.foodie_level_num}}</td>
+      <td>{{item.review.rating}}</td>
+    </tr>
+</tbody>
+  </table>

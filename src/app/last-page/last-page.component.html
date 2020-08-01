@@ -1,0 +1,13 @@
+<div class="div-border">
+    <p>User is on page 2</p>
+</div><br>
+<button [routerLink]="['/main-page']" class="button-css">Go To Page 1</button>
+<div style="width: 80%; height: 80%;">
+    <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)">
+        </canvas>
+  </div>
